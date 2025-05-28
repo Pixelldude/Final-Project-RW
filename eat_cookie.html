@@ -28,10 +28,11 @@
         background: #E64F4C;
         color: white;
       }
-   
-    .ui{
+   .everything{
         display:flex;
-        float:right;
+   }
+    .ui{
+        margin-right:auto;
     }
       
     </style>
@@ -41,7 +42,7 @@
     </head>
     <title>A clicker game</title>
     <body>
-           
+    <div class="everything"> 
       <div id="cookie-counter">
         <input id="display" readonly>
       </div>
@@ -107,7 +108,7 @@
           
           
         </div>
-    
+    </div>
       <script>
         let score = 0;
         const display = document.getElementById("display");
