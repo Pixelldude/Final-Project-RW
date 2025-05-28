@@ -12,13 +12,20 @@
       background-color:transparent;
       grid-template-areas:
       "bingus one one two two three three flingus"
+      "bungus buffer buffer buffer buffer buffer buffer shmungus"
       "bungus four four five five six six shmungus"
     }
     div{
       height:250px;
       text-align:center;
       color:white;
+      font-family: 'Times New Roman', serif;
       border:2px solid red;
+      background-color:black;
+    }
+    .buffer{
+      grid-area:buffer;
+      height:50px;
       background-color:black;
     }
     .intro{
@@ -84,6 +91,7 @@
       <div class="two">2</div>
       <div class="three">3</div>
       <div class="flingus"><img class="img-fill" src="shadow_right.png"></div>
+      <div class="buffer"></div>
       <div class="four">4</div>
       <div class="five">5</div>
       <div class="six">6</div>
