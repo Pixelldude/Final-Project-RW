@@ -36,8 +36,11 @@
    .everything{
         display:flex;
        grid-area:stuff;
-       background-image: url('https://img.freepik.com/premium-vector/tablecloth-background-red-seamless-pattern_87543-456.jpg');
+       
    }
+    .picnic{
+        background-image: url('https://img.freepik.com/premium-vector/tablecloth-background-red-seamless-pattern_87543-456.jpg');
+    }
     .cookie-stuff{
         margin-right:auto;
     }
@@ -62,9 +65,11 @@
     </head>
     <title>A clicker game</title>
     <body>
-    <div class="everything"> 
+        <div class="picnic">
         <h2>How about a nice calm picknic...</h2>
         <h1>In the well of tortured souls!</h1>
+    <div class="everything"> 
+        
         <div class="cookie-stuff">
       <div id="cookie-counter">
         <input id="display" readonly>
@@ -132,7 +137,7 @@
           
           
         </div>
-    
+        </div>
       <script>
         let score = 0;
         const display = document.getElementById("display");
