@@ -28,7 +28,20 @@
         background: #E64F4C;
         color: white;
       }
-
+    .div_wrapper{
+        display:grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-auto-row:200px;
+        background-color:transparent;
+        grid-template-areas:
+            "border cookiediv cookiediv cookiediv menudiv menudiv border2"
+    }
+    .cookiediv{
+        grid-area:cookiediv;
+    }
+    .ui{
+        grid-area:menudiv;
+    }
       
     </style>
     <head>
@@ -37,12 +50,15 @@
     </head>
     <title>A clicker game</title>
     <body>
+        <div class="div_Wrapper">
+            <div class = "cookiediv">
       <div id="cookie-counter">
         <input id="display" readonly>
       </div>
       <div>
         <button class="cookie" onclick="get_cookie()"><img id ="cookieimg" src="https://pixeldude.neocities.org/cookie/sprite_cookie00.png"></button>
         </div>
+            </div>
          <div class = "ui">
            <p>Clicker Upgrades</p>
  
@@ -101,7 +117,7 @@
           
           
         </div>
-        
+      </div>
       <script>
         let score = 0;
         const display = document.getElementById("display");
