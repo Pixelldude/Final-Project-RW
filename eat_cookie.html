@@ -30,11 +30,20 @@
       }
    .everything{
         display:flex;
+       grid-area:stuff;
    }
     .cookie-stuff{
         margin-right:auto;
     }
-      
+    .div-wrapper{
+      display:grid;
+      grid-template-columns: repeat(7,1fr);
+      grid-auto-row:200px;
+      background-color:transparent;
+      grid-template-areas:
+        "empty stuff stuff stuff empty"
+    }
+
     </style>
     <head>
       <meta name = "viewport" content="width=device=width user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
