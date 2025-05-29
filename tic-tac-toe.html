@@ -4,6 +4,7 @@
   <!--js coding done by Robert Walton-->
   <!--css styling done by Erika-->
     <head>
+      <title>EVIL tic tac toe</title>
         <style>
              body {
                   display: flex;
@@ -11,12 +12,12 @@
                   justify-content: center;
                   font-family: 'Georgia';
                   background: radial-gradient(
-                  rgba(165, 217, 232, 1) 0%,
-                  rgba(240, 238, 218, 1) 45%,
-                  rgba(162, 114, 204, 1) 100%
+                  rgba(92, 5, 5, 1) 0%,
+                  rgba(54, 2, 2, 1) 45%,
+                  rgba(23, 2, 2, 1) 100%
                   
                   );
-                  color: rgb(130, 86, 168);
+                  color: rgb(201, 64, 110);
                   text-align: center;
           }
     
@@ -54,7 +55,8 @@
 </style>
   <main>
     <body>
-      <h1>Tic Tac Toe </h1>
+      <h1>Evil Tic Tac Toe </h1>
+      <h3>the first to get 3 in a row LOSES</h3>
        <p id="message">Click a box to start! </p>
       
     <div class= "row">
@@ -173,9 +175,9 @@
         //if the player won, i use javascript's flexible variables to set "playerWon" to 1 or 2
         //depending on who won
         if (P1turn){
-          playerWon = 1;
-        }else{
           playerWon = 2;
+        }else{
+          playerWon = 1;
         }
         //then tell the players who won the game
         msg.textContent = "Player " + playerWon + " Won the game!"
